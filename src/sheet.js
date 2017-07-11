@@ -42,7 +42,7 @@ function sheetForTag(tag) {
   }
 }
 
-const isBrowser = typeof window !== 'undefined'
+const isBrowser = typeof window !== 'undefined' && window.document
 const isDev = (process.env.NODE_ENV === 'development') || (!process.env.NODE_ENV) //(x => (x === 'development') || !x)(process.env.NODE_ENV)
 const isTest = process.env.NODE_ENV === 'test'
 
