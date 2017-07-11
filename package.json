@@ -1,6 +1,6 @@
 {
   "name": "glamor",
-  "version": "2.20.27",
+  "version": "2.20.28",
   "description": "inline css for component systems",
   "main": "lib/index.js",
   "typings": "index.d.ts",
@@ -40,6 +40,7 @@
     "test:server": "cross-env NODE_ENV=test babel-node tests/server.js --presets es2015,stage-0,react",
     "test:watch": "npm test -- --no-single-run",
     "coverage": "rm -rf tests/coverage && COVERAGE=1 npm test && open tests/coverage/*/index.html",
+    "preinstall": "npm run build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
