@@ -263,7 +263,7 @@ function gate(objOrBool, optionalBoolean = false) {
   } // default: don't include all browsers
 }
 
-let isBrowser = typeof window !== 'undefined' && window.document;
+let isBrowser = typeof window !== 'undefined' && window.document
 
 export function autoprefix(obj) {
   return autoPrefixer(obj, !isBrowser)
